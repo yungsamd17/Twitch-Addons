@@ -1,5 +1,5 @@
   <p align="left">
-    <img src="https://github.com/yungsamd17/Twitch-Addons/assets/64147848/afab1132-44ec-48ca-a057-fa3710c2a542">
+    <img src="https://github.com/yungsamd17/Twitch-Addons/assets/64147848/37d86639-403f-4de7-8eef-ac3f348e5e20">
 </p>
   
 <h1> <div align="left">Sam's Twitch Addons</div> </h1>
