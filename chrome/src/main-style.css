@@ -1,0 +1,122 @@
+/* Sam's Twitch Addons | Main Style sheet */
+
+/* ===== THEME COLORS ===== 
+
+MAIN BG COLOR [ALMOST BLACK] - #0e0e10
+HEADER COLOR  [DARK GREY] - #18181b
+SETTINGS BUTTON [LIGHTER GREY] - #38383f
+ACCENT COLOR [TWITCH PURPLE] - #9146ff
+
+*/
+
+body {
+  width: 330px;
+  height: auto;
+  background: #0e0e10;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+::selection {
+  background-color: #9146ff;
+}
+h2 {
+  color: #ffffff;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+ul {
+  padding-left: 30px;
+}
+li {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.header {
+  color: #fff;
+  background-color: #18181b;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  user-select: none;
+}
+.header h1 {
+  margin: 0;
+}
+.settings {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 0;
+}
+.settings-button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #38383f;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition-duration: 0.250s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  user-select: none;
+}
+.settings-button:hover {
+  color: #ffffff;
+  background-color: #9146ff;
+  box-shadow: 0 2px 4px 0 rgba(145, 70, 255, 0.2), 0 5px 10px 0 rgba(145, 70, 255, 0.1);
+  text-decoration: none;
+}
+.card {
+  background-color: #1f1f23;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.card-links {
+  color: #ffffff;
+  text-decoration: none;
+}
+.card-links:hover {
+  text-decoration: underline;
+  user-select: none;
+}
+.color-twitch-purple {
+  color: #9146ff;
+  text-decoration: none;
+  cursor: default;
+}
+.footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+.footer-button {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.250s;
+  user-select: none;
+}
+.footer-button:hover {
+  color: #ffffff;
+  background-color: #9146ff;
+  box-shadow: 0 2px 4px 0 rgba(145, 70, 255, 0.2), 0 5px 10px 0 rgba(145, 70, 255, 0.2);
+  text-decoration: none;
+}

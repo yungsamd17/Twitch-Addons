@@ -1,0 +1,113 @@
+/* Sam's Twitch Addons | Settings page style sheet */
+
+body {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  color: #f1f1f1;
+  background-color: #0e0e10;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+::selection {
+    background-color: #9146ff;
+    color: #18181b;
+}
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+.header {
+  align-items: center;
+  background-color: #18181b;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  user-select: none;
+}
+.header h1 {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.alert {
+  color: #fff;
+  background-color: #facb85;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-right: 15px solid #d98509;
+  border-left: 15px solid #d98509;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  user-select: none;
+}
+.alert p {
+  color: #0e0e10;
+  margin: 0;
+  font-size: 1rem;
+}
+.alert-selection::selection {
+  background-color: #E5E5E5;
+}
+.card {
+  background-color: #1f1f23;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card a {
+  color: inherit;
+}
+.card a:hover {
+  color: #9146ff;
+}
+.card p {
+  color: #868686;
+  margin: 4px;
+}
+.footer {
+  bottom: 0;
+  position: fixed;
+  background-color: #18181b;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.link-container {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+.footer-link {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.250s;
+  user-select: none;
+}
+.footer-link:hover {
+  color: #fff;
+  background-color: #9146ff;
+  text-decoration: none;
+  box-shadow: 0 2px 4px 0 rgba(145, 70, 255, 0.2), 0 5px 10px 0 rgba(145, 70, 255, 0.2);
+}

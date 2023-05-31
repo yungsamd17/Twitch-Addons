@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Sam's Twitch Addons",
+  "version": "0.1.0",
+  "description": "Sam's Twitch Addons, Adding QoL updates and changes to twitch.tv",
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+   },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "Sam's Twitch Addons",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["scripts/global.js"]
+    },
+    {
+      "matches": ["https://player.twitch.tv/*"],
+      "js": ["scripts/player.js"]
+    }
+  ]
+}
