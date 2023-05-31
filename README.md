@@ -17,7 +17,7 @@
 - Fix for stream quality downscaling when in another tab while stream is playing.
 
 # Install
-## Chrome: [**HERE**](https://github.com/yungsamd17/Open-Twitch-Channel/releases/latest)
+## Chrome: [**HERE**](https://github.com/yungsamd17/Twitch-Addons/releases)
 
 ### (*Download and follow instructions*)
 Here is a short guide how to install an unpacked extension on Google Chrome or Chromium-based browsers (e.g. Brave, Edge, Opera).
