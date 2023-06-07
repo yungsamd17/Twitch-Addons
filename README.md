@@ -1,7 +1,6 @@
 <div align="center">
   <h1>⚠️THIS EXTENSION IS STILL <em>WORK IN PROGRESS</em>⚠️</h1>
-  <h2>My other Extension:</h2>
-  <p><a href="https://github.com/yungsamd17/Open-Twitch-Channel">Open Twitch Channel</a> - Chrome, Firefox</p>
+  <h4>My other Extension: <a href="https://github.com/yungsamd17/Open-Twitch-Channel">Open Twitch Channel</a></h4>
 </div>
 <br>
 
