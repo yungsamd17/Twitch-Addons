@@ -12,15 +12,10 @@ if (window.location.href.startsWith("https://player.twitch.tv/?channel=")) {
 window.onload = function() {
   console.log("|Sam's Twitch Addons|: Applying player script.");
 
-  (function() {
-      'use strict';
-      Object.defineProperty(document, "hidden", { value : false});
-  })();
-
-  // Second tab change to get full case-censite channel's username
-  // Function to find the element and update the title
+  // Second update title to get full case-censite channel username
+  // Find the element and update the title
   function findElementAndUpdateTitle() {
-    // Find the element with the specified data-test-selector attribute
+    // Find the element with the specified attribute
     const element = document.querySelector('[data-test-selector="stream-info-card-component__title-link"]');
 
     if (element) {
