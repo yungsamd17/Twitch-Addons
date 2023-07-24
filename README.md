@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>⚠️THIS EXTENSION IS STILL <em>WORK IN PROGRESS</em>⚠️</h1>
+  <h1>⚠️THIS EXTENSION IS STILL WORK IN PROGRESS⚠️</h1>
   <h4>My other Extension: <a href="https://github.com/yungsamd17/Open-Twitch-Channel">Open Twitch Channel</a></h4>
 </div>
 <br>
@@ -10,15 +10,14 @@
   
 # Sam's Twitch Addons
 ### Sam's Twitch Addons, Adding QoL features, updates and fixes to <a href="https://twitch.tv">twitch.tv
-## Features:
+### Features:
 - Changes tabs title on load with channels username on player.twitch.tv pages.
-## Fixes:
-- Fix for stream quality downscaling when in another tab while stream is playing.
+### Fixes:
+- Fix for stream quality downscaling on twitch.tv page when in another tab while stream is playing.
 
-# Install
-## Chrome: [**HERE**](https://github.com/yungsamd17/Twitch-Addons/releases)
+## [**Download**](https://github.com/yungsamd17/Twitch-Addons/releases/latest/download/chrome.zip) *and follow instructions on how to install*
 
-### (*Download and follow instructions*)
+### How to Install
 Here is a short guide how to install an unpacked extension on Google Chrome or Chromium-based browsers (e.g. Brave, Edge, Opera).
 
 1. Unzip the folder.
