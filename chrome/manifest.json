@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Sam's Twitch Addons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sam's Twitch Addons, Adding QoL updates and changes to twitch.tv",
   "icons": {
     "16": "src/icons/icon16.png",
