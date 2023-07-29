@@ -1,17 +1,16 @@
 // ==UserScript==
 // @name            Change player.twitch.tv Title
 // @description     Changes tabs title on load with channels username on player.twitch.tv pages.
-// @downloadURL     https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
-// @namespace       https://github.com/yungsamd17/Twitch-Addons
-// @version         1.0
+// @version         1.1
 // @author          yungsamd17
-// @homepageURL     https://github.com/yungsamd17/Twitch-Addons
+// @namespace       https://github.com/yungsamd17/Twitch-Addons
+// @license         MIT License
+// @downloadURL     https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
+// @updateURL       https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
 // @icon            https://raw.githubusercontent.com/yungsamd17/Twitch-Addons/main/chrome/src/icons/favicon.ico
-// @license         MIT
 // @match           https://player.twitch.tv/*
 // @grant           none
 // @run-at          document-end
-// @updateURL       https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
 // ==/UserScript==
 
 (function() {
@@ -23,14 +22,11 @@
         // Extract the username from URL
         const urlParams = new URLSearchParams(window.location.search);
         const username = urlParams.get("channel");
-
         // Update title
         document.title = `${username} - Twitch Player`;
     }
 
     window.onload = function() {
-        console.log("|Sam's Twitch Addons|: Applying player script.");
-
         // Second update title to get full case-censite channel username
         // Find the element and update the title
         function findElementAndUpdateTitle() {
@@ -40,7 +36,6 @@
             if (element) {
                 // Extract the username from element's text
                 const username = element.textContent.trim();
-
                 // Update title
                 document.title = `${username} - Twitch Player`;
             }
