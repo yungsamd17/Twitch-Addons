@@ -1,8 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Sam's Twitch Addons",
-  "version": "0.1.1",
-  "description": "Sam's Twitch Addons, Adding QoL updates and changes to twitch.tv",
+  "description": "Sam's Twitch Addons, adding QoL features, updates and fixes to twitch.tv",
+  "version": "0.1.5",
+  "author": "yungsamd17",
+  "homepage_url": "https://github.com/yungsamd17/Twitch-Addons",
   "icons": {
     "16": "src/icons/icon16.png",
     "48": "src/icons/icon48.png",
@@ -15,13 +17,17 @@
     "default_title": "Sam's Twitch Addons",
     "default_popup": "popup.html"
   },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "settings/settings.html"
+  },
   "content_scripts": [
     {
-      "matches": ["https://www.twitch.tv/*"],
+      "matches": ["https://www.twitch.tv/*", "https://player.twitch.tv/*", "https://embed.twitch.tv/*"],
       "js": ["scripts/global.js"]
     },
     {
-      "matches": ["https://player.twitch.tv/*"],
+      "matches": ["https://player.twitch.tv/*", "https://embed.twitch.tv/*"],
       "js": ["scripts/player.js"]
     }
   ]

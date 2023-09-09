@@ -10,8 +10,7 @@ if (window.location.href.startsWith("https://player.twitch.tv/?channel=")) {
 }
 
 window.onload = function() {
-  console.log("|Sam's Twitch Addons|: Applying player script.");
-
+  
   // Second update title to get full case-censite channel username
   // Find the element and update the title
   function findElementAndUpdateTitle() {
@@ -29,4 +28,5 @@ window.onload = function() {
 
   // Call the function to execute your code
   findElementAndUpdateTitle();
+  console.log("%cSam's Twitch Addons:", "color: #9147ff", "Player script enabled.");
 };

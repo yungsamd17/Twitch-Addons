@@ -1,20 +1,26 @@
-/* Sam's Twitch Addons | Settings page style sheet */
+/* Sam's Twitch Addons - Settings Style sheet */
 
 body {
+  --main-bg: #0e0e10; /*ALMOST BLACK*/
+  --main-secondary: #18181b; /*DARK GREY*/
+  --main-secondary-alt: #1f1f23; /*DARK LIGHTER GREY*/
+  --accent: #9146ff; /*TWITCH PURPLE*/
+  --accent-grey: #38383f; /*LIGHTER GREY*/
+
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  color: #f1f1f1;
-  background-color: #0e0e10;
+  color: #fff;
+  background-color: var(--main-bg);
   font-family: Arial, sans-serif;
   font-size: 1rem;
 }
 ::selection {
-    background-color: #9146ff;
-    color: #18181b;
+    background-color: var(--accent);
+    color: var(--main-secondary);
 }
 .main {
   width: 100%;
@@ -27,10 +33,10 @@ body {
 }
 .header {
   align-items: center;
-  background-color: #18181b;
+  background-color: var(--main-secondary);
   margin-bottom: 20px;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   user-select: none;
 }
 .header h1 {
@@ -46,7 +52,7 @@ body {
   margin-bottom: 20px;
   border-right: 7px solid #d98509;
   border-left: 7px solid #d98509;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   user-select: none;
@@ -60,19 +66,19 @@ body {
   background-color: #E5E5E5;
 }
 .card {
-  background-color: #1f1f23;
+  background-color: var(--main-secondary-alt);
   margin-bottom: 20px;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card a {
   color: inherit;
 }
 .card a:hover {
-  color: #9146ff;
+  color: var(--accent);
 }
 .card p {
   color: #868686;
@@ -81,10 +87,10 @@ body {
 .footer {
   bottom: 0;
   position: fixed;
-  background-color: #18181b;
+  background-color: var(--main-secondary);
   margin: 15px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .link-container {
@@ -98,16 +104,14 @@ body {
   padding: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  transition-duration: 0.250s;
   user-select: none;
 }
 .footer-link:hover {
   color: #fff;
-  background-color: #9146ff;
+  background-color: var(--accent);
   text-decoration: none;
-  box-shadow: 0 2px 4px 0 rgba(145, 70, 255, 0.2), 0 5px 10px 0 rgba(145, 70, 255, 0.2);
 }
