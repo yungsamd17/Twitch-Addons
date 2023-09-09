@@ -37,6 +37,7 @@ body {
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   user-select: none;
 }
 .header h1 {
@@ -50,8 +51,8 @@ body {
   background-color: #facb85;
   padding: 10px;
   margin-bottom: 20px;
-  border-right: 7px solid #d98509;
-  border-left: 7px solid #d98509;
+  border-right: 10px solid #d98509;
+  border-left: 10px solid #d98509;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
