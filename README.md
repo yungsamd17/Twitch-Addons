@@ -8,7 +8,7 @@
 
 ### Features:
 
-- Screenshot Button
+- Screenshot Stream
   - Adds a button to the Twitch Player to enable you to take and download screenshots.
 - Update player.twitch.tv Title
   - Changes tabs title on load with channels username on [player.twitch.tv](https://player.twitch.tv/?channel=xqc&parent=twitch.tv) pages.
