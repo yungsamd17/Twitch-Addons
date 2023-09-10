@@ -18,6 +18,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1rem;
 }
+:root {
+  color-scheme: dark;
+}
 ::selection {
     background-color: var(--accent);
     color: var(--main-secondary);
@@ -85,26 +88,14 @@ body {
   color: #868686;
   margin: 4px;
 }
-.footer {
-  bottom: 0;
-  position: fixed;
-  background-color: var(--main-secondary);
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.link-container {
+.footer-link-container {
   display: flex;
   justify-content: center;
-  padding: 3px;
 }
 .footer-link {
   display: inline-block;
   color: #fff;
-  padding: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
@@ -113,6 +104,6 @@ body {
 }
 .footer-link:hover {
   color: #fff;
-  background-color: var(--accent);
+  background-color: var(--accent-grey);
   text-decoration: none;
 }

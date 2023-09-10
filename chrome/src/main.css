@@ -7,7 +7,7 @@ body {
   --accent: #9146ff; /*TWITCH PURPLE*/
   --accent-grey: #38383f; /*LIGHTER GREY*/
 
-  width: 330px;
+  width: 300px;
   height: auto;
   background: var(--main-bg);
   padding: 10px;
