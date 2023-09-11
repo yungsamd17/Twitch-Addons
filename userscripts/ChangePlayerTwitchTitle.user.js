@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name            Change player.twitch.tv Title
 // @description     Changes tabs title on load with channels username on player.twitch.tv pages.
-// @version         1.1
+// @version         1.2
 // @author          yungsamd17
-// @namespace       https://github.com/yungsamd17/Twitch-Addons
+// @namespace       https://github.com/yungsamd17/UserScripts
 // @license         MIT License
 // @downloadURL     https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
 // @updateURL       https://github.com/yungsamd17/Twitch-Addons/raw/main/userscripts/ChangePlayerTwitchTitle.user.js
@@ -43,4 +43,5 @@
 
         // Call the function to execute your code
         findElementAndUpdateTitle();
+        console.log("%cChange player.twitch.tv Title:", "color: #9147ff", "Title Updated.");
 }})();
