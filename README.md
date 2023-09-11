@@ -9,7 +9,8 @@
 ### Features:
 
 - Screenshot Stream
-  - Adds a button to the Twitch Player to enable you to take and download screenshots.
+  - Adds a button to the Twitch Player to enable you to copy to clipboard and download screenshots.
+  - **Firefox users** need to go to `about:config` and set `dom.events.asyncClipboard.clipboardItem` to `true` in order to be able to copy screenshot to clipboard.
 - Update player.twitch.tv Title
   - Changes tabs title on load with channels username on [player.twitch.tv](https://player.twitch.tv/?channel=xqc&parent=twitch.tv) pages.
 

@@ -1,8 +1,8 @@
 (function() {
     'use strict';
 
-    // Function to capture and download the screenshot with a custom timestamp format
-    function captureScreenshot() {
+    // Function to capture for copying to clipboard and downloading the screenshot
+    async function captureScreenshot() {
         const videoElement = document.querySelector('video');
         if (videoElement) {
             const canvas = document.createElement('canvas');
@@ -10,6 +10,15 @@
             canvas.height = videoElement.videoHeight;
             const ctx = canvas.getContext('2d');
             ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+
+            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+            
+            try {
+                await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+                console.log("%cTwitch Screenshot:", "color: #9147ff", "Screenshot copied to clipboard.");
+            } catch (error) {
+                console.log("%cTwitch Screenshot: Screenshot failed to copy to clipboard!", "color: #ff8080");
+            }
 
             const timestamp = getFormattedTimestamp();
 
