@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Sam's Twitch Addons",
   "description": "Sam's Twitch Addons, adding QoL features, updates and fixes to twitch.tv",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "yungsamd17",
   "homepage_url": "https://github.com/yungsamd17/Twitch-Addons",
   "icons": {
