@@ -1,7 +1,12 @@
-// Change tab's title temp.
-// Check if the current URL matches
+// =========================================================
+// ============= UPDATE PLAYER.TWITCH.TV TITLE =============
+// =========================================================
+
+// Temp title update.
+
+// Check if the URL matches
 if (window.location.href.startsWith("https://player.twitch.tv/?channel=")) {
-  // Extract the username from URL
+  // Extract the username
   const urlParams = new URLSearchParams(window.location.search);
   const username = urlParams.get("channel");
 
@@ -11,14 +16,14 @@ if (window.location.href.startsWith("https://player.twitch.tv/?channel=")) {
 
 window.onload = function() {
   
-  // Second update title to get full case-censite channel username
+  // Final title update with case-sensitive channel username
+
   // Find the element and update the title
-  function findElementAndUpdateTitle() {
-    // Find the element with the specified attribute
+  function updatePlayerTitle() {
     const element = document.querySelector('[data-test-selector="stream-info-card-component__title-link"]');
 
     if (element) {
-      // Extract the username from element's text
+      // Extract the username
       const username = element.textContent.trim();
 
       // Update title
@@ -26,7 +31,6 @@ window.onload = function() {
     }
   }
 
-  // Call the function to execute your code
-  findElementAndUpdateTitle();
+  updatePlayerTitle();
   console.log("%cSam's Twitch Addons:", "color: #9147ff", "Player script enabled.");
 };
