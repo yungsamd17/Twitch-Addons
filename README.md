@@ -19,7 +19,7 @@
 
 - 
 -->
-## [**Download**](https://github.com/yungsamd17/Twitch-Addons/releases/latest/download/chrome.zip) *and follow instructions on how to install*
+## [**Download**](https://github.com/yungsamd17/Twitch-Addons/releases/latest/download/sams-twitch-addons.zip) *and follow instructions on how to install*
 
 ### How to Install
 Here is a short guide how to install an unpacked extension on Google Chrome or Chromium-based browsers (e.g. Brave, Edge, Opera).
