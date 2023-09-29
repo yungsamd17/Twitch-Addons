@@ -1,11 +1,12 @@
-/* Sam's Twitch Addons - Settings Style sheet */
-
 body {
-  --main-bg: #0e0e10; /*ALMOST BLACK*/
-  --main-secondary: #18181b; /*DARK GREY*/
-  --main-secondary-alt: #1f1f23; /*DARK LIGHTER GREY*/
-  --accent: #9146ff; /*TWITCH PURPLE*/
-  --accent-grey: #38383f; /*LIGHTER GREY*/
+  --background: #0e0e10;
+  --primary: #18181b;
+  --secondary: #1f1f23;
+  --accent: #9146ff;
+  --accent-grey: #38383f;
+  --alert-primary: #facb85;
+  --alert-accent: #d98509;
+  --shadow: rgba(0, 0, 0, 0.2);
 
   max-width: 1000px;
   display: flex;
@@ -14,96 +15,101 @@ body {
   padding: 0;
   margin: 0 auto;
   color: #fff;
-  background-color: var(--main-bg);
+  background-color: var(--background);
   font-family: Arial, sans-serif;
+  font-weight: bold;
   font-size: 1rem;
-}
-:root {
-  color-scheme: dark;
+  user-select: none;
 }
 ::selection {
-    background-color: var(--accent);
-    color: var(--main-secondary);
+  background-color: var(--accent);
+  color: var(--primary);
 }
+
+
 .main {
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .wrapper {
   width: 100%;
   padding: 20px;
 }
+
+
+/* HEADER */
+
 .header {
   align-items: center;
-  background-color: var(--main-secondary);
+  background-color: var(--primary);
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  user-select: none;
+  box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
 }
+
 .header h1 {
   margin: 0;
   font-family: Verdana, sans-serif;
   text-align: center;
-  font-weight: bold;
 }
+
+
+/* ALERT */
+
 .alert {
-  color: #fff;
-  background-color: #facb85;
+  background-color: var(--alert-primary);
   padding: 10px;
   margin-bottom: 20px;
-  border-right: 10px solid #d98509;
-  border-left: 10px solid #d98509;
+  border-right: 10px solid var(--alert-accent);
+  border-left: 10px solid var(--alert-accent);
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  user-select: none;
+  box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
 }
+
 .alert p {
-  color: #0e0e10;
+  color: var(--primary);
   margin: 0;
-  font-size: 1rem;
 }
-.alert-selection::selection {
-  background-color: #E5E5E5;
-}
+
+
+/* Content CARD */
+
 .card {
-  background-color: var(--main-secondary-alt);
+  background-color: var(--secondary);
   margin-bottom: 20px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: normal;
+  box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
+  user-select: text;
 }
+
 .card a {
   color: inherit;
 }
 .card a:hover {
   color: var(--accent);
 }
-.card p {
-  color: #868686;
-  margin: 4px;
-}
-.footer-link-container {
+
+
+/* FOOTER */
+
+.footer {
   display: flex;
   justify-content: center;
 }
+
 .footer-link {
   display: inline-block;
   color: #fff;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
   text-decoration: none;
-  user-select: none;
 }
 .footer-link:hover {
-  color: #fff;
   background-color: var(--accent-grey);
-  text-decoration: none;
 }
