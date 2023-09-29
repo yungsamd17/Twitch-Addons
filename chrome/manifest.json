@@ -24,7 +24,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.twitch.tv/*", "https://player.twitch.tv/*", "https://embed.twitch.tv/*"],
-      "js": ["scripts/global.js"]
+      "js": ["scripts/main.js"]
     },
     {
       "matches": ["https://player.twitch.tv/*", "https://embed.twitch.tv/*"],
