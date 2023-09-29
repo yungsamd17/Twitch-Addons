@@ -1,47 +1,43 @@
-/* Sam's Twitch Addons - Main Style sheet */
-
 body {
-  --main-bg: #0e0e10; /*ALMOST BLACK*/
-  --main-secondary: #18181b; /*DARK GREY*/
-  --main-secondary-alt: #1f1f23; /*DARK LIGHTER GREY*/
-  --accent: #9146ff; /*TWITCH PURPLE*/
-  --accent-grey: #38383f; /*LIGHTER GREY*/
+  --background: #0e0e10;
+  --primary: #18181b;
+  --secondary: #38383f;
+  --accent: #9146ff;
+  --shadow: rgba(0, 0, 0, 0.2);
 
   width: 300px;
   height: auto;
-  background: var(--main-bg);
+  background: var(--background);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
   padding: 10px;
   margin: 0;
-  font-family: Arial, sans-serif;
+  user-select: none;
 }
-::selection {
-  background-color: var(--accent);
-}
-h2 {
-  color: #fff;
-  margin: 10px;
-  font-size: 1.2rem;
-}
-ul {
-  padding-left: 30px;
-}
-li {
-  color: #fff;
-  font-size: 0.9rem;
-}
+
+
+/* HEADER */
+
 .header {
-  color: #fff;
-  background-color: var(--main-secondary);
+  color: white;
+  background-color: var(--primary);
   padding: 5px;
   border-radius: 5px;
   font-family: Verdana, sans-serif;
-  font-size: 1rem;
   text-align: center;
-  user-select: none;
 }
+
 .header h1 {
   margin: 0;
 }
+.accent-color {
+  color: var(--accent);
+}
+
+
+/* Settings BUTTON */
+
 .settings {
   display: flex;
   justify-content: center;
@@ -49,60 +45,36 @@ li {
 }
 .settings-button {
   width: 100%;
-  color: #fff;
-  background-color: var(--accent-grey);
+  color: white;
+  background-color: var(--secondary);
   padding: 10px;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
   text-decoration: none;
-  user-select: none;
 }
 .settings-button:hover {
-  color: #fff;
+  color: white;
   background-color: var(--accent);
-  box-shadow: 0 2px 4px 0 rgba(145, 70, 255, 0.2), 0 5px 10px 0 rgba(145, 70, 255, 0.1);
   text-decoration: none;
 }
-.card {
-  background-color: var(--main-secondary-alt);
-  margin: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-.card-links {
-  color: #fff;
-  text-decoration: none;
-}
-.card-links:hover {
-  text-decoration: underline;
-  user-select: none;
-}
-.color-twitch-purple {
-  color: var(--accent);
-  text-decoration: none;
-  cursor: default;
-}
-.footer-button-container {
+
+
+/* FOOTER */
+
+.footer {
   display: flex;
   justify-content: center;
   padding-top: 40px;
 }
 .footer-button {
   display: inline-block;
-  color: #fff;
+  color: white;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
   text-decoration: none;
-  user-select: none;
 }
 .footer-button:hover {
-  color: #fff;
-  background-color: var(--accent-grey);
+  background-color: var(--secondary);
   text-decoration: none;
 }
