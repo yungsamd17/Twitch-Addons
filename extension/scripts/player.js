@@ -32,5 +32,15 @@ window.onload = function() {
   }
 
   updatePlayerTitle();
+
+  // =========================================================
+  // ============ HIDE WATCH ON TWITCH BUTTON ================
+  // =========================================================
+
+  // Hide elements with the specified class directly in querySelectorAll
+  document.querySelectorAll('[class*="ScCoreButton-sc-ocjdkq-0"][class*="ScCoreButtonText-sc-"]').forEach((element) => {
+    element.style.display = "none";
+  });
+
   console.log("%cSam's Twitch Addons:", "color: #9147ff", "Player script enabled.");
 };
