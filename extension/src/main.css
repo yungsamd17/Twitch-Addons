@@ -1,80 +1,87 @@
-body {
-  --background: #0e0e10;
-  --primary: #18181b;
-  --secondary: #38383f;
-  --accent: #9146ff;
-  --shadow: rgba(0, 0, 0, 0.2);
+:root {
+    --background: #0e0e10;
+    --primary: #18181b;
+    --secondary: #38383f;
+    --accent: #9146ff;
+    --shadow: rgba(0, 0, 0, 0.2);
+}
 
-  width: 300px;
-  height: auto;
-  background: var(--background);
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px;
-  margin: 0;
-  user-select: none;
+body {
+    width: 300px;
+    height: auto;
+    background: var(--background);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    user-select: none;
 }
 
 
 /* HEADER */
 
 .header {
-  color: white;
-  background-color: var(--primary);
-  padding: 5px;
-  border-radius: 5px;
-  font-family: Verdana, sans-serif;
-  text-align: center;
+    color: white;
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
 }
 
 .header h1 {
-  margin: 0;
+    margin: 0;
 }
+
 .accent-color {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 
 /* Settings BUTTON */
 
 .settings {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
+
 .settings-button {
-  width: 100%;
-  color: white;
-  background-color: var(--secondary);
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
-  text-decoration: none;
+    width: 100%;
+    color: white;
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow);
+    text-decoration: none;
 }
+
 .settings-button:hover {
-  color: white;
-  background-color: var(--accent);
-  text-decoration: none;
+    color: white;
+    background-color: var(--accent);
+    text-decoration: none;
 }
 
 
 /* FOOTER */
 
 .footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
+
 .footer-button {
-  display: inline-block;
-  color: white;
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
 }
+
 .footer-button:hover {
-  background-color: var(--secondary);
-  text-decoration: none;
+    background-color: var(--secondary);
+    text-decoration: none;
 }

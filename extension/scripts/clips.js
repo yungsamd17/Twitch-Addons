@@ -11,7 +11,7 @@ function createClipDownloadButton() {
         removeClipDownloadButton();
         return;
     }
-    
+
     // check if we are on a clip page
     const isClipPage = window.location.href.includes('/clip/') || window.location.href.includes('clips.twitch.tv');
     if (!isClipPage) {
