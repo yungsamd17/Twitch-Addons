@@ -13,14 +13,13 @@
 - Screenshot Stream
   - Adds a button to the Twitch Player to enable you to copy to clipboard and download screenshots.
   - **Firefox users** need to go to `about:config` and set `dom.events.asyncClipboard.clipboardItem` to `true` in order to be able to copy screenshot to clipboard.
+
+### Fixes:
+
 - Update player.twitch.tv Title
   - Changes tabs title on load with channels username on [player.twitch.tv](https://player.twitch.tv/?channel=xqc&parent=twitch.tv) pages.
 
 
-<!--### Fixes:
-
-- 
--->
 ## [**Download**](https://github.com/yungsamd17/Twitch-Addons/releases/latest/download/sams-twitch-addons.zip) *and follow instructions on how to install*
 
 ### How to Install
