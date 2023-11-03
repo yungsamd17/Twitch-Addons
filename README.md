@@ -9,7 +9,7 @@
 ### Features:
 
 - Clip Downloader
-  - Adds a **Download** button for clips to player on twitch.tv and clips.twitch.tv pages.
+  - Adds a **Download** button for clips to player on [twitch.tv](https://www.twitch.tv) and [clips.twitch.tv](https://clips.twitch.tv/KathishFaintFriesGingerPower-IWV6AJsEbYlFzRA8) pages.
 - Screenshot Stream
   - Adds a button to the Twitch Player to enable you to copy to clipboard and download screenshots.
   - **Firefox users** need to go to `about:config` and set `dom.events.asyncClipboard.clipboardItem` to `true` in order to be able to copy screenshot to clipboard.
