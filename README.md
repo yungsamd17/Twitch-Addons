@@ -1,8 +1,4 @@
-<p align="left">
-  <img src="https://github.com/yungsamd17/Twitch-Addons/assets/64147848/afab1132-44ec-48ca-a057-fa3710c2a542">
-</p>
-  
-# Sam's Twitch Addons
+# <img src="extension/src/icons/icon48.png" width="38" align="left" /> Sam's Twitch Addons
 
 ### Sam's Twitch Addons, Adding QoL features, updates and fixes to [Twitch.tv](https://twitch.tv)
 
